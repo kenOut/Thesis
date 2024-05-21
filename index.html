@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thesis</title>
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="outer">
+		<div class="prod-logo">
+			<img src="/img/1.png" style="width: 100px; height: 100px;" class="prod-img" alt="icon"/>
+			<ul class="main-nav">
+				<li class="nav-li"><a href="/index.html">Home</a></li>
+				<li class="nav-li"><a href="#">About</a></li>
+				<li class="nav-li"><a href="/register.html">Register</a></li>
+				<li class="nav-li"><a href="#">Contact</a></li>
+		  </ul>
+		</div>
+		<div class="inner">
+			<div class="prod-left">
+				<h1 class="prod-head"><span style="color:goldenrod">Thesis</span>-Finders</h1>
+				<h4 class="prod-head-sub">Lorem ipsum dolor sit amet...</h4>
+			</div>
+			<div class="prod-right">
+				<img src="https://github.com/abhinanduN/codepen/blob/master/human-image.png?raw=true" class="prod-human-img" alt="prod"/>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(".prod-logo").hover(function () {
+    $(".inner").addClass("inner-hover");
+    $(".nav-li").slideDown(500);
+  },
+  function () {
+    $(".inner").removeClass("inner-hover");
+   $(".nav-li").slideUp(500);
+  }
+);
+	</script>
+</body>
+</html>
